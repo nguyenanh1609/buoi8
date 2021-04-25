@@ -123,11 +123,11 @@ function check(n) {
             dem++
         }
     }
-    if (dem == 1) {
-        document.getElementById("kq").innerText = "không"
+    if (dem == 0) {
+        document.getElementById("kq").innerText = "có"
     }
     else {
-        document.getElementById("kq").innerText = "có"
+        document.getElementById("kq").innerText = "không"
     }
 }
 
