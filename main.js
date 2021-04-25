@@ -59,27 +59,20 @@ function in_chan(n) {
 }
 
 function in_snt(n) {
-    // let n = document.getElementById('n').value
-    console.log(n);
-    if (n < 2) {
-        document.getElementById("kq").innerText = ""
-        document.getElementById("kq").innerText = "không phải là số nguyên tố"
-    }
-    else {
+    document.getElementById("kq").innerText = ""
+    
+    for (let j = 0; j <= n; j++) {
         let dem = 0;
-        for (let i = 1; i <= n; i++) {
-            if (n % i == 0) {
+        for (let i = 1; i <= j; i++) {
+            if (j % i == 0) {
                 dem++
             }
+        } if (dem == 2) {
+            let a = document.getElementById("kq")
+            a.innerHTML = a.innerHTML + "<label>" + j + " " + "</label>"
         }
-        if (dem == 2) {
-            document.getElementById("kq").innerText = ""
-            document.getElementById("kq").innerText = "n là số nguyên tố"
-        }
-        else {
-            document.getElementById("kq").innerText = ""
-            document.getElementById("kq").innerText = "không phải là số nguyên tố"
-
+        else{
+            console.log("no")
         }
     }
 }
@@ -115,18 +108,26 @@ function sum_le(n) {
     for (let i = 0; i <= n; i++) {
         if (i % 2 == 1) {
             sum += i
-            document.getElementById("kq").innerText=sum
+            document.getElementById("kq").innerText = sum
         }
     }
 
 }
 
 
-function check(n){
-    let a=String(n)
-    for(let i=1;i<=a.length;i++)
-    {
-
+function check(n) {
+    let a = String(n)
+    let dem = 0
+    for (let i = 0; i <= a.length - 1; i++) {
+        if (a.charAt(i) % 2 == 0) {
+            dem++
+        }
+    }
+    if (dem == 1) {
+        document.getElementById("kq").innerText = "không"
+    }
+    else {
+        document.getElementById("kq").innerText = "có"
     }
 }
 
