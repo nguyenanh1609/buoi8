@@ -124,9 +124,9 @@ function sum_le(n) {
 
 function check(n){
     let a=String(n)
-    for(let i=1;i<=a.length;i++)\
+    for(let i=1;i<=a.length;i++)
     {
-        
+
     }
 }
 
