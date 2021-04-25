@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <form action="" method="POST">
+        <p>nhập n</p>
+        <input type="text" placeholder="nhập n" id="n" value="">
+        <br>
+        <select name="" id="select">
+            <option value="" >-chọn câu-</option>
+            <option value="0">kiểm tra số nguyên tố</option>
+            <option value="1">in các số từ 1-n</option>
+            <option value="2">in các số lẻ từ 1-n</option>
+            <option value="3">in các số chẵn từ 1-n</option>
+            <option value="4">in các số nguyên tố</option>
+            <option value="5">tính tổng từ 1-n</option>
+            <option value="6">tổng bình phương 1-n</option>
+            <option value="7">tổng các số lẻ 1-n</option>
+            <option value="8">số n có toàn số lẻ tạo thành hay không </option>
+        </select>
+        <br>
+        <input type="button" value="kết quả" onclick="kq()" id="ok">
+        <input type="reset" value="reset">
+        <br>
+        <p id="kq"></p>
+    </form>
+
 </body>
+<script src="main.js"></script>
+
 </html>
